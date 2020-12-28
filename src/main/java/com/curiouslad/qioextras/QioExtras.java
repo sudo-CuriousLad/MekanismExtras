@@ -33,12 +33,12 @@ public class QioExtras
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
 
-    public static final ItemGroup CREATIVE_TAB = new ItemGroup() {
+    public static final ItemGroup CREATIVE_TAB = new ItemGroup("creativeTab") {
         @Override
         public ItemStack createIcon() {
             return new ItemStack(ModItems.COPPER_WIRE.get());
         }
-    }
+    };
 
     public QioExtras() {
         Registration.register();
