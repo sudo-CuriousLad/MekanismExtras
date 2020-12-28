@@ -1,5 +1,6 @@
 {
   "item.qioextras.copper_ingot": "Copper Ingot",
   "block.qioextras.copper_block": "Block of Copper",
-  "block.qioextras.copper_ore": "Copper Ore"
+  "block.qioextras.copper_ore": "Copper Ore",
+  "item.qioextras.copper_wire": "Copper Wire"
 }

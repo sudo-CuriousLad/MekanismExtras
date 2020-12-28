@@ -5,6 +5,8 @@ import com.curiouslad.qioextras.items.ModItems;
 import com.curiouslad.qioextras.util.Registration;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -30,6 +32,13 @@ public class QioExtras
     public static final String MOD_ID= "qioextras";
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
+
+    public static final ItemGroup CREATIVE_TAB = new ItemGroup() {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(ModItems.COPPER_WIRE.get());
+        }
+    }
 
     public QioExtras() {
         Registration.register();
