@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "item": "qioextras:copper_ingot"
+    }
+  },
+  "result": {
+    "item": "qioextras:copper_block"
+  }
+}
