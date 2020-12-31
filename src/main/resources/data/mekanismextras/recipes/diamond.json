@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "www",
+    "wcw",
+    "www"
+  ],
+  "key":
+  {
+    "w":
+    {
+      "item": "mekanismextras:copper_wire"
+    },
+    "c":
+    {
+      "item": "mekanismextras:copper_block"
+    }
+  },
+  "result":
+  {
+    "item": "minecraft:diamond"
+  }
+}

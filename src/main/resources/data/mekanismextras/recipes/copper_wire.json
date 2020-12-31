@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "item": "mekanismextras:copper_ingot"
+    }
+  },
+  "result": {
+    "item": "mekanismextras:copper_wire"
+  }
+}
