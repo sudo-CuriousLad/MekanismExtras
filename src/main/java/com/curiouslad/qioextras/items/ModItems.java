@@ -15,6 +15,8 @@ public class ModItems {
     public static final RegistryObject<Item> COPPER_WIRE =
             Registration.ITEMS.register("copper_wire", () -> new Item(new Item.Properties().group(QioExtras.CREATIVE_TAB)));
 
+    public static final RegistryObject<Item> CUPRIC_APPLE =
+            Registration.ITEMS.register("cupric_apple", () -> new CupricApple());
     public static void register() {
 
     }
