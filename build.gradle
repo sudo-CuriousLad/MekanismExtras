@@ -1,3 +1,11 @@
+repositories{
+    maven {
+        name = 'kotlinforforge'
+        url = 'https://thedarkcolour.github.io/KotlinForForge/'
+    }
+}
+
+
 buildscript {
     repositories {
         maven { url = 'https://files.minecraftforge.net/maven' }
@@ -6,12 +14,14 @@ buildscript {
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '3.+', changing: true
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.20"
     }
 }
 apply plugin: 'net.minecraftforge.gradle'
 // Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
+apply plugin: 'kotlin'
 
 version = '1.0'
 group = 'com.curiouslad.mekanismextras' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
@@ -95,6 +105,7 @@ dependencies {
     // that the dep is a ForgeGradle 'patcher' dependency. And it's patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft 'net.minecraftforge:forge:1.16.4-35.1.4'
+    implementation 'thedarkcolour:kotlinforforge:1.7.0'
 
     // You may put jars on which you depend on in ./libs or you may define them like so..
     // compile "some.group:artifact:version:classifier"
@@ -147,5 +158,11 @@ publishing {
         maven {
             url "file:///${project.projectDir}/mcmodsrepo"
         }
+    }
+}
+
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = '1.8'
     }
 }

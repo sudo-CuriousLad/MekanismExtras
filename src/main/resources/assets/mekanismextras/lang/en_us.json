@@ -1,7 +1,10 @@
 {
   "item.mekanismextras.copper_ingot": "Copper Ingot",
-  "block.mekanismextras.copper_block": "Block of Copper",
-  "block.mekanismextras.copper_ore": "Copper Ore",
   "item.mekanismextras.copper_wire": "Copper Wire",
-  "item.mekanismextras.cupric_apple": "Cupric Apple"
+  "item.mekanismextras.cupric_apple": "Cupric Apple",
+
+  "item.mekanismextras.copper_shovel": "Copper Shovel",
+
+  "block.mekanismextras.copper_block": "Block of Copper",
+  "block.mekanismextras.copper_ore": "Copper Ore"
 }
